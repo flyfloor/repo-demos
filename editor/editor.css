@@ -1,0 +1,91 @@
+* {
+	outline: none;
+}
+
+html,body,div,section,p,pre,aside,header,footer,article,figure,ul,ol, input,button,textarea, h1, h2,h3,h4,h5,h6  {
+	margin: 0;
+	padding: 0;
+}
+
+.editor {
+	width: 700px;
+}
+
+.toolbar-item {
+	padding: 5px 10px;
+	background: #eee;
+	width: 100%;
+	display: inline-block;
+	border: 1px solid #ddd;
+	border-bottom: none;
+	box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+}
+
+
+
+
+.toolbar-item a {
+	text-decoration: none;
+	color: #666;
+	width: 20px;
+	display: inline-block;
+	font-size: 15px;
+	margin-right: 10px;
+}
+
+.separator {
+	border-left: 1px solid #888;
+	padding-right: 10px;
+}
+
+.editor-content {
+	display: block;
+	border: 1px solid #ccc;
+	width: 100%;
+	height: 300px;
+	padding: 10px;
+	box-shadow: 1px 1px 2px rgba(0,0,0,0.05) inset;
+	color: #555;
+	overflow-x: hidden; 
+	overflow-y: scroll;
+	word-wrap:break-word;
+	resize: vertical;
+}
+
+.editor-content:hover {
+	cursor: text;
+}
+
+
+.editor-content ul, .editor-content ol {
+	margin-left: 35px;
+}
+
+.editor-content pre {
+	padding: 10px;
+	color: #C03C51;
+	background: rgba(100, 100, 100, 0.1);
+	margin: 10px;
+	overflow: scroll;
+	overflow-x: auto;
+	overflow-y: hidden;
+	word-wrap: normal; 
+}
+
+.editor-content blockquote {
+	margin: 10px 10px 10px 20px;
+	padding: 10px;
+	border-left: 5px solid #eee;
+}
+
+
+.toolbar-active {
+	color: #65D88E !important;
+}
+
+.editor-pholder {
+	font-size: 14px;
+	font-style: italic;
+}
+
+

@@ -1,0 +1,138 @@
+html {
+	width: 100%;
+	height: 100%;
+	background-color: #e5e8e5;
+	box-shadow: 0 0 80px rgba(150,200,200, 0.3) inset;
+}
+
+a{
+	display: inline-block;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+ul li {
+	margin-right: -20px;
+	cursor: pointer;
+	display: inline-block;
+	width: 215px;
+	float: left;
+	box-shadow: 0 0 2px rgba(0,0,0,0.3);
+}
+
+
+li:hover {
+	/*width: 220px;*/
+	box-shadow: 0 0 20px rgba(0,0,0,0.3);
+	opacity: 1;
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	-ms-transition: all 1s;
+	-o-transition: all 1s;
+	transition: all 1s;
+
+}
+img {
+	border-left: 2px solid rgba(0,0,0,0.3);
+	box-shadow: 0 0 10px rgba(0,0,0,0.3) inset;
+	border-radius: 10px;
+}
+
+li img:hover {
+	margin-left: -8px;
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	-ms-transition: all 1s;
+	-o-transition: all 1s;
+	transition: all 1s;
+}
+
+.wrapper{
+	width: 1000px;
+	position: relative;
+	margin: 0 auto;
+}
+#image_display{
+	position: relative;
+	width: 1000px;
+	overflow: hidden;
+	margin-top: 80px;
+}
+
+#image_display ul{
+	position: absolute;
+	width: 2200px;
+	margin: 0;
+	padding: 0;
+	float: left;
+	height: 300px;
+}
+
+#image_display img {
+	height: 300px;
+}
+
+#display_content {
+	/*width: 9999px;*/
+	height: 300px;
+}
+
+
+
+.previous-arrow, .next-arrow {
+	position: absolute;
+	top: 120px;
+	margin: 10px;
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	background-color: #fff;
+	border-radius: 25px;
+	border: 1px solid #cde;
+	box-shadow: 0 1px 8px rgba(180,180,180,0.5) inset;
+}
+
+.previous-arrow:hover, .next-arrow:hover{
+	box-shadow: 0 1px 5px rgba(200,200,200, 0.4) inset;
+	border: 1px solid #ccc;
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	-ms-transition: all 1s;
+	-o-transition: all 1s;
+	transition: all 1s;
+
+}
+
+.previous-arrow {
+	left: -80px;
+}
+
+.previous-arrow:before, .next-arrow:before {
+	content: "";
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	box-shadow: 2px 2px #aca; 
+	margin-top: 7px;
+}
+.previous-arrow:before{
+	-webkit-transform:rotate(135deg);
+	-moz-transform: rotate(135deg);
+	-ms-transform: rotate(135deg);
+	-o-transform: rotate(135deg);
+	transform: rotate(135deg);
+	margin-left: 12px;
+}
+
+.next-arrow:before{
+	margin-left: 2px;
+	-webkit-transform:rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+.next-arrow {
+	right: -80px;
+}

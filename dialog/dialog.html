@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>custom dialog</title>
+		<script src="../jquery-2.1.0.min.js"></script>
+		<script src="dialog.js"></script>
+		<link rel="stylesheet" href="main.css">
+	</head>
+	<body>
+		<div class="wrapper">
+			<h1 style="text-align:center;font-weight:lighter;margin-bottom:80px">
+				Create a dialog<br/>
+				<button id ="create_dialog" class="btn">new dialog</button>
+			</h1>
+			<h3 style="font-style:italic;font-weight:lighter">code here:</h3>
+			<section id="code_view" style="padding: 0 10px;">
+				<ul class="nav">
+					<li class="active"><a href="#">JQuery</a></li>
+					<li><a href="#">HTML</a></li>
+				</ul>
+				<pre id="JQ">
+		$("#create_dialog").on("click", function(){
+			Dialog({
+				title:"",
+				content: "",
+				yesFunc: function(){
+					alert("yes button handle");
+				},
+				noFunc: function(){
+					alert("no button handle");
+				}
+			});
+		});
+				</pre>
+				<pre id="HTML">
+		&lt;button id ="create_dialog" class="btn"&gt;new dialog&lt;/button&gt;
+				</pre>
+			</section>
+		</div>
+		<script src="main.js"></script>
+	</body>
+</html>
