@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex demo</title>
+    <style>
+        ul {
+            overflow: auto;
+            zoom: 1;
+        }
+        ul li {
+            position: relative;
+            display: inline-block;
+            width: 200px;
+            padding: 10px;
+            height: 200px;
+            outline: 2px solid #fff;
+            background: #333;
+            color: #fff;
+            float: left;
+        }
+        .block {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .item {
+            display: block;
+        }
+
+        .block2 {
+            align-items: flex-end;
+        }
+
+        .block3, .block4 {
+            flex-direction: column;
+        }
+
+        .block4 {
+            align-items: flex-end;
+        }
+
+        .block5 .item:nth-child(2) {
+            align-self: flex-end;
+        }
+
+        .block6 .item:nth-child(1) {
+            -ms-align-self: flex-end;
+            align-self: flex-end;
+        }
+
+        .block7 {
+            height: 50%;
+            flex-direction: column;
+        }
+
+        .block7 .item:nth-child(2) {
+            align-self: center;
+        }
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            <div class="block block1">
+                <span class="item">文字</span>
+                <span class="item">文字</span>
+            </div>
+        </li>
+        <li>
+            <div class="block block2">
+                <span class="item">文字</span>
+                <span class="item">文字</span>
+            </div>
+        </li>
+        <li>
+            <div class="block block3">
+                <span class="item">文字</span>
+                <span class="item">文字</span>
+            </div>
+        </li>
+        <li>
+            <div class="block block4">
+                <span class="item">文字</span>
+                <span class="item">文字</span>
+            </div>
+        </li>
+        <li>
+            <div class="block block5">
+                <span class="item">文字</span>
+                <span class="item">文字</span>
+            </div>
+        </li>
+        <li>
+            <div class="block block6">
+                <span class="item">文字</span>
+                <span class="item">文字</span>
+            </div>
+        </li>
+        <li>
+            <div class="block block7">
+                <span class="item">文字</span>
+                <span class="item">文字</span>
+            </div>
+        </li>
+    </ul>
+</body>
+</html>
